@@ -1,15 +1,41 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueRouter from 'vue-router'
+import ElementUi from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import VueCookies from 'vue-cookies'
+import store from '../store'
+import qs from 'qs'
 
+axios.defaults.baseURL = "https://127.0.0.1:3000/API";//配置api地址前缀
+
+//挂载中间件
 Vue.config.productionTip = false
+Vue.prototype.$qs = qs;
+Vue.use(ElementUi);
+Vue.use(VueAxios,axios);
+Vue.use(VueRouter);
+Vue.use(VueCookies);
 
-/* eslint-disable no-new */
+//挂载路由和vuex以及创建根组件
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
+
+
+// 设置路由转跳验证
+router.beforeEach((to, from, next) => {
+  //语法说明
+  //to：目前路由对象
+  //from：目标路由对象
+  //next():继续转跳
+  //next({ path: '/index/login' }):转跳至指定路由
+  next();
+});
