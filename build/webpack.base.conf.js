@@ -7,9 +7,6 @@ const vueLoaderConfig = require('./vue-loader.conf')
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
-
-var url = JSON.stringify("https://127.0.0.1:3000/API")
-
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -29,11 +26,6 @@ module.exports = {
       '@': resolve('src'),
     }
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      HOST:url
-    })
-  ],
   module: {
     rules: [
       {

@@ -10,7 +10,8 @@ import VueCookies from 'vue-cookies'
 import store from '../store'
 import qs from 'qs'
 
-axios.defaults.baseURL = "https://127.0.0.1:3000/API";//配置api地址前缀
+axios.defaults.baseURL = "http://49.234.9.206/rgzn-api";//配置api地址前缀]
+axios.defaults.withCredentials = true;//携带cookie
 
 //挂载中间件
 Vue.config.productionTip = false
