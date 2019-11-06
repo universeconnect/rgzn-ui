@@ -18,10 +18,13 @@
       //先问一下后台我登录了没有
       this.axios.get("/LoginAndSign/state.php",{params:{}})
               .then( body => {
-                console.log(body.data);
-                /*if(body.data){
-
-                }*/
+                if(body.data){
+                  //登录了，填个表，随便玩吧
+                  this.$store.commit("updataUserInfo",body.data)
+                }else {
+                  //没登录的，赶紧登录去
+                  this.$router.push({path:'/login'})
+                }
               })
     }
   }

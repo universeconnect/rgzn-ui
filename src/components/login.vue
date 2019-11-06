@@ -53,8 +53,11 @@
           .then(response => {
             if(response.data.status_code === 1000){
               //密码正确
-              //存储用户数据到vuex
+              //存储用户数据到vuex，填个表
               this.$store.commit("updataUserInfo",response.data.datas[0])
+
+              //去玩吧
+              this.$router.push({path:'/home'})
             }else{
               //密码错误
               alert("密码错误")
