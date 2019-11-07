@@ -10,7 +10,8 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: ['babel-polyfill','./src/main.js']
+    "babel-polyfill":"babel-polyfill",
+    app: './src/main.js'
   },
   output: {
     path: config.build.assetsRoot,
@@ -36,7 +37,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client'), resolve('node_modules/ElementUi')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

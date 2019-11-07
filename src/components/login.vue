@@ -17,7 +17,7 @@
                     </div>
                 </el-form-item>
                 <el-form-item>
-                    <el-button type="primary" :disabled=okSubmit @click="loginButton">登录</el-button>
+                    <el-button type="primary" :loading=SubmitState :disabled=okSubmit @click="loginButton">登录</el-button>
                 </el-form-item>
             </el-form>
         </div>
@@ -39,7 +39,8 @@
         code:"",
         okCode:"a2C4",//来一个初始验证码
         imgClass:"el-icon-refresh-right",
-        okSubmit:true
+        okSubmit:true,
+        SubmitState:false,
       }
     },
     methods:{
