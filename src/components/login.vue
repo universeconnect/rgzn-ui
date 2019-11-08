@@ -58,7 +58,7 @@
               this.$store.commit("updataUserInfo",response.data.datas[0])
 
               //去玩吧
-              this.$router.push({path:'/home'})
+              this.$router.push({path:'/index'})
             }else{
               //密码错误
               alert("密码错误")

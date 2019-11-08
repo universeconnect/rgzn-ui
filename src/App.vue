@@ -45,4 +45,12 @@
   ul { list-style:none; }
   img { border:0; }
   table { border-collapse:collapse; }
+  .el-main{
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: #E9EEF3 !important;
+  }
+  .el-header {
+    background-color: #B3C0D1 !important;
+  }
 </style>

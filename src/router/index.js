@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import notFound from '@/components/notFound'
 import login from '@/components/login'
-import home from '@/components/home'
 import ep from '@/components/ep'
+import index from '@/components/index'
+import Month from '@/components/month/month'
 
 
 Vue.use(Router)
@@ -15,9 +16,21 @@ export default new Router({
       name: 'login',
       component: login
     },{
-      path: '/home',
-      name: 'home',
-      component: home
+      path: '/index',
+      name: 'index',
+      component: index,
+      children:[//子路由
+        {
+          path: '',
+          redirect:'1',//默认/index重定向到/index/1
+        },
+        {
+          path: '1',
+          name: '1',
+          component: Month,
+        }
+      ]
+
     },{
       path: '/ep',
       name: 'ep',
