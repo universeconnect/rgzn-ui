@@ -56,14 +56,14 @@
               <el-input :disabled="true" v-model="formLabelAlign.status"></el-input>
             </el-form-item>
             <el-form-item label="是否预算内计划">
-              <el-checkbox-group v-model="formLabelAlign.budget">
+              <el-checkbox-group class="group-checkbox" v-model="formLabelAlign.budget">
                 <el-checkbox name="type"></el-checkbox>
               </el-checkbox-group>
             </el-form-item>
           </el-form>
         </div>
 
-        <el-tabs type="border-card" style="width: 95%">
+        <el-tabs type="border-card" style="width: 100%; min-height: 300px">
 
           <el-tab-pane label="基本信息">
             <el-table
@@ -215,6 +215,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'HelloWorld',
     data() {
@@ -282,4 +283,13 @@ export default {
   display: inline-block;
   width: 25%;
 }
+.main-btn{
+  padding-top: 10px;
+}
+.el-button{
+  margin-left: 50px;
+}
+  .group-checkbox{
+    width: 50px;
+  }
 </style>
