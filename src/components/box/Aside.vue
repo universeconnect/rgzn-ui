@@ -23,7 +23,7 @@
             </el-menu-item>
             <el-menu-item index="/index/4" >
                 <i class="el-icon-film"></i>
-                <span slot="title">......</span>
+                <span slot="title">需求计划查询</span>
             </el-menu-item>
             <el-menu-item index="/index/5" >
                 <i class="el-icon-trophy"></i>

@@ -7,6 +7,8 @@ import index from '@/components/index'
 import Month from '@/components/month/month'
 import Yearly from '@/components/yearly/yearly'
 import Emergency from '@/components/emergency/emergency'
+import Query from '@/components/query/Query'
+
 
 
 Vue.use(Router)
@@ -40,6 +42,11 @@ export default new Router({
           path: '3',
           name: '3',
           component: Emergency,
+        },
+        {
+          path: '4',
+          name: '4',
+          component: Query,
         }
       ]
 

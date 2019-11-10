@@ -2,19 +2,8 @@
   <div class="box">
     <el-main>
       <div class="container">
-        <div class="main-btn">
-          <el-button>保 存</el-button>
-          <el-button>复 制</el-button>
-          <el-button>提 交</el-button>
-          <el-button>打 印</el-button>
-          <el-button>导 出</el-button>
-          <el-button>附 件</el-button>
-          <el-button>提 醒</el-button>
-          <el-button>删 除</el-button>
-          <el-button>关 闭</el-button>
-        </div>
 
-        <div style="margin: 40px;"></div>
+        <div style="margin: 30px;"></div>
         <div class="monthly-main">
           <el-form label-width="120px" class="monthly-form" :model="formLabelAlign">
             <el-form-item label="需求计划类型">
@@ -33,11 +22,12 @@
               <el-date-picker
                       v-model="value2"
                       type="month"
+                      style="width: 100% !important;"
                       placeholder="选择月份">
               </el-date-picker>
             </el-form-item>
             <el-form-item label="需求部门">
-              <el-select v-model="value" placeholder="请选择">
+              <el-select v-model="value" style="width: 100% !important;" placeholder="请选择">
                 <el-option
                         v-for="item in options"
                         :key="item.value"
@@ -62,8 +52,18 @@
             </el-form-item>
           </el-form>
         </div>
-
-        <el-tabs type="border-card" style="width: 100%; min-height: 300px">
+        <div class="main-btn">
+          <el-button>保 存</el-button>
+          <el-button>复 制</el-button>
+          <el-button>提 交</el-button>
+          <el-button>打 印</el-button>
+          <el-button>导 出</el-button>
+          <el-button>附 件</el-button>
+          <el-button>提 醒</el-button>
+          <el-button>删 除</el-button>
+          <el-button>关 闭</el-button>
+        </div>
+        <el-tabs type="border-card" style="width: 99%; min-height: 300px; margin:0 auto;">
 
           <el-tab-pane label="基本信息">
             <el-table
@@ -289,10 +289,10 @@ export default {
   width: 25%;
 }
 .main-btn{
-  padding-top: 10px;
+  margin-bottom: 20px;
 }
 .el-button{
-  margin-left: 50px;
+  margin-left: 20px;
 }
   .group-checkbox{
     width: 50px;
