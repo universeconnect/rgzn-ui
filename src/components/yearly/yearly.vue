@@ -29,20 +29,13 @@
             <el-form-item label="备注">
               <el-input v-model="formLabelAlign.remark"></el-input>
             </el-form-item>
-            <el-form-item label="需求计划月份">
-              <el-date-picker
-                      v-model="value2"
-                      type="month"
-                      placeholder="选择月份">
-              </el-date-picker>
-            </el-form-item>
             <el-form-item label="需求部门">
               <el-select v-model="value" placeholder="请选择">
                 <el-option
-                        v-for="item in options"
-                        :key="item.value"
-                        :label="item.label"
-                        :value="item.value">
+                  v-for="item in options"
+                  :key="item.value"
+                  :label="item.label"
+                  :value="item.value">
                 </el-option>
               </el-select>
             </el-form-item>
@@ -67,128 +60,128 @@
 
           <el-tab-pane label="基本信息">
             <el-table
-                    :data="tableData"
-                    style="width: 100%">
+              :data="tableData"
+              style="width: 100%">
               <el-table-column
-                      fixed
-                      prop="ID"
-                      label=""
-                      width="50">
+                fixed
+                prop="ID"
+                label=""
+                width="50">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="物料分类编码"
-                      width="120">
+                prop="name"
+                label="物料分类编码"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="物料分类名称"
-                      width="120">
+                prop="name"
+                label="物料分类名称"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="物料编码"
-                      width="120">
+                prop="name"
+                label="物料编码"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="物料名称"
-                      width="120">
+                prop="name"
+                label="物料名称"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="规格"
-                      width="120">
+                prop="name"
+                label="规格"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="型号"
-                      width="120">
+                prop="name"
+                label="型号"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="单位"
-                      width="120">
+                prop="name"
+                label="单位"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="需求数量"
-                      width="120">
+                prop="name"
+                label="需求数量"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="需求月份"
-                      width="120">
+                prop="name"
+                label="需求月份"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="需求日期"
-                      width="120">
+                prop="name"
+                label="需求日期"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="货额是否确定"
-                      width="120">
+                prop="name"
+                label="货额是否确定"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="期望供应商"
-                      width="120">
+                prop="name"
+                label="期望供应商"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="固定供应商"
-                      width="120">
+                prop="name"
+                label="固定供应商"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="备注"
-                      width="120">
+                prop="name"
+                label="备注"
+                width="120">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="物料追踪码"
-                      width="120">
+                prop="name"
+                label="物料追踪码"
+                width="120">
               </el-table-column>
               <el-table-column
-                      label="操作"
-                      fixed="right"
-                      width="150">
+                label="操作"
+                fixed="right"
+                width="150">
                 <el-button
-                        size="mini"
-                        @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+                  size="mini"
+                  @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
                 <el-button
-                        size="mini"
-                        type="danger"
-                        @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+                  size="mini"
+                  type="danger"
+                  @click="handleDelete(scope.$index, scope.row)">删除</el-button>
               </el-table-column>
             </el-table>
           </el-tab-pane>
 
           <el-tab-pane label="流程信息">
             <el-table
-                    :data="tableData"
-                    style="width: 100%">
+              :data="tableData"
+              style="width: 100%">
               <el-table-column
-                      prop="ID"
-                      label=""
-                      width="50">
+                prop="ID"
+                label=""
+                width="50">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="审批人">
+                prop="name"
+                label="审批人">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="审批时间">
+                prop="name"
+                label="审批时间">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="审批意见">
+                prop="name"
+                label="审批意见">
               </el-table-column>
               <el-table-column
-                      prop="name"
-                      label="说明">
+                prop="name"
+                label="说明">
               </el-table-column>
             </el-table>
           </el-tab-pane>
@@ -221,79 +214,79 @@
 
 <script>
 
-export default {
-  name: 'HelloWorld',
-    data() {
-        return {
-            //表单假数据 begin
-            formLabelAlign2:{
-                name:'王小虎',
+    export default {
+        name: 'yearlyPlan',
+        data() {
+            return {
+                //表单假数据 begin
+                formLabelAlign2:{
+                    name:'王小虎',
+                },
+                formLabelAlign: {
+                    type: '月度计划',
+                    id: '1111888',
+                    name: '',
+                    remark:'',
+                    staff:'',
+                    examine:'已审批',
+                    status:'已提交',
+                    budget:''
+                },
+                tableData: [{
+                    ID:'1',
+                    name: '王小虎'
+                }],
+                //end
+                value2:'',
+                //部门选择假数据
+                //begin
+                options: [{
+                    value: '选项1',
+                    label: '财务部'
+                }, {
+                    value: '选项2',
+                    label: '财务部'
+                }, {
+                    value: '选项3',
+                    label: '财务部'
+                }, {
+                    value: '选项4',
+                    label: '财务部'
+                }],
+                value: '',
+                //    end
+                tabledatas: [],
+            }
         },
-            formLabelAlign: {
-                type: '月度计划',
-                id: '1111888',
-                name: '',
-                remark:'',
-                staff:'',
-                examine:'已审批',
-                status:'已提交',
-                budget:''
+        methods: {
+            handleOpen(key, keyPath) {
+                console.log(key, keyPath);
             },
-            tableData: [{
-                ID:'1',
-                name: '王小虎'
-            }],
-            //end
-            value2:'',
-            //部门选择假数据
-            //begin
-            options: [{
-                value: '选项1',
-                label: '财务部'
-            }, {
-                value: '选项2',
-                label: '财务部'
-            }, {
-                value: '选项3',
-                label: '财务部'
-            }, {
-                value: '选项4',
-                label: '财务部'
-            }],
-            value: '',
-        //    end
-            tabledatas: [],
-        }
-    },
-    methods: {
-        handleOpen(key, keyPath) {
-            console.log(key, keyPath);
-        },
-        handleClose(key, keyPath) {
-            console.log(key, keyPath);
-        },
-        handleEdit(index, row) {
-            console.log(index, row);
-        },
-        handleDelete(index, row) {
-            console.log(index, row);
-        },
+            handleClose(key, keyPath) {
+                console.log(key, keyPath);
+            },
+            handleEdit(index, row) {
+                console.log(index, row);
+            },
+            handleDelete(index, row) {
+                console.log(index, row);
+            },
 
+        }
     }
-}
 </script>
 
 <style scoped>
-.box >>> .el-form-item{
-  display: inline-block;
-  width: 25%;
-}
-.main-btn{
-  padding-top: 10px;
-}
-.el-button{
-  margin-left: 50px;
-}
+  .box >>> .el-form-item{
+    display: inline-block;
+    width: 25%;
+  }
+  .main-btn{
+    padding-top: 10px;
+  }
+  .el-button{
+    margin-left: 50px;
+  }
   .group-checkbox{
     width: 50px;
   }

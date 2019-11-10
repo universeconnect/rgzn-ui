@@ -15,11 +15,11 @@
             </el-menu-item>
             <el-menu-item index="/index/2">
                 <i class="el-icon-monitor"></i>
-                <span slot="title">......</span>
+                <span slot="title">年度计划</span>
             </el-menu-item>
             <el-menu-item index="/index/3" >
                 <i class="el-icon-reading"></i>
-                <span slot="title">......</span>
+                <span slot="title">紧急计划</span>
             </el-menu-item>
             <el-menu-item index="/index/4" >
                 <i class="el-icon-film"></i>

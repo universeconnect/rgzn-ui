@@ -5,6 +5,8 @@ import login from '@/components/login'
 import ep from '@/components/ep'
 import index from '@/components/index'
 import Month from '@/components/month/month'
+import Yearly from '@/components/yearly/yearly'
+import Emergency from '@/components/emergency/emergency'
 
 
 Vue.use(Router)
@@ -28,6 +30,16 @@ export default new Router({
           path: '1',
           name: '1',
           component: Month,
+        },
+        {
+          path: '2',
+          name: '2',
+          component: Yearly,
+        },
+        {
+          path: '3',
+          name: '3',
+          component: Emergency,
         }
       ]
 
