@@ -8,6 +8,7 @@ import Month from '@/components/month/month'
 import Yearly from '@/components/yearly/yearly'
 import Emergency from '@/components/emergency/emergency'
 import Query from '@/components/query/Query'
+import Demand from '@/components/demand/demand'
 
 
 
@@ -26,7 +27,12 @@ export default new Router({
       children:[//子路由
         {
           path: '',
-          redirect:'1',//默认/index重定向到/index/1
+          redirect:'0',//默认/index重定向到/index/1
+        },
+        {
+          path: '0',
+          name: '0',
+          component: Demand,
         },
         {
           path: '1',
