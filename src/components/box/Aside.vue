@@ -46,7 +46,7 @@
             </el-menu-item>
             <el-menu-item index="/index/5" >
                 <i class="el-icon-trophy"></i>
-                <span slot="title">......</span>
+                <span slot="title">需求计划改查</span>
             </el-menu-item>
             <el-menu-item index="/index/6" >
                 <i class="el-icon-s-custom"></i>

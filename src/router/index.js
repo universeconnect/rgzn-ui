@@ -8,6 +8,7 @@ import Month from '@/components/month/month'
 import Yearly from '@/components/yearly/yearly'
 import Emergency from '@/components/emergency/emergency'
 import Query from '@/components/query/Query'
+import ChangeNeed from '@/components/changeNeed/changeNeed'
 import Demand from '@/components/demand/demand'
 
 
@@ -53,6 +54,11 @@ export default new Router({
           path: '4',
           name: '4',
           component: Query,
+        },
+        {
+          path: '5',
+          name: '5',
+          component: ChangeNeed,
         }
       ]
 

@@ -200,6 +200,7 @@
           <el-tab-pane label="流程信息">
             <el-table
                     :data="tableData"
+                    max-height="280px"
                     style="width: 100%">
               <el-table-column
                       prop="ID"
