@@ -44,14 +44,26 @@
                 <i class="el-icon-film"></i>
                 <span slot="title">需求计划查询</span>
             </el-menu-item>
-            <el-menu-item index="/index/5" >
-                <i class="el-icon-trophy"></i>
-                <span slot="title">需求计划改查</span>
-            </el-menu-item>
-            <el-menu-item index="/index/6" >
-                <i class="el-icon-s-custom"></i>
-                <span slot="title">......</span>
-            </el-menu-item>
+          <el-submenu index="/index/6">
+            <template slot="title">
+              <i class="el-icon-location"></i>
+              <span>需求计划审批</span>
+            </template>
+            <el-submenu index="/index/6-0">
+              <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>分类查看</span>
+              </template>
+                <el-menu-item index="/index/6-1">
+                  <i class="el-icon-s-order"></i>
+                  <span slot="title">待审批需求计划</span>
+                </el-menu-item>
+                <el-menu-item index="/index/6-2">
+                  <i class="el-icon-s-order"></i>
+                  <span slot="title">已审批需求计划</span>
+                </el-menu-item>
+            </el-submenu>
+          </el-submenu>
         </el-menu>
     </div>
 </template>

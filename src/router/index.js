@@ -8,8 +8,9 @@ import Month from '@/components/month/month'
 import Yearly from '@/components/yearly/yearly'
 import Emergency from '@/components/emergency/emergency'
 import Query from '@/components/query/Query'
-import ChangeNeed from '@/components/changeNeed/changeNeed'
 import Demand from '@/components/demand/demand'
+import noApproval from '@/components/needApproval/noApproval'
+import yesApproval from '@/components/needApproval/yesApproval'
 
 
 
@@ -56,9 +57,14 @@ export default new Router({
           component: Query,
         },
         {
-          path: '5',
+          path: '6-1',
           name: '5',
-          component: ChangeNeed,
+          component: noApproval,
+        },
+        {
+          path: '6-2',
+          name: '5',
+          component: yesApproval,
         }
       ]
 
