@@ -68,7 +68,7 @@
         :total="1000">
       </el-pagination>
 
-      <div style="margin-top: 40px; margin-left: 130px; width: 850px; text-align: center">
+      <div style="margin-top: 40px; width: 80%; text-align: center">
           <el-form style=" margin-left: 150px" :inline="true">
             <el-form-item style="height: 100px; " label="审批意见:"  prop="">
               <el-input  type="textarea" style="width: 600px;  height: 99px" placeholder="请不要超过100字..."></el-input>

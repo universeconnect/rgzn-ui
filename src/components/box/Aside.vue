@@ -7,7 +7,7 @@
         @close="handleClose"
         background-color="#333"
         text-color="#fff"
-        active-text-color="#ffd04b"
+        active-text-color="#FF6600"
         unique-opened
         :router="r">
             <el-submenu>

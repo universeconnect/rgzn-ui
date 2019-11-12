@@ -35,4 +35,22 @@
     .box >>> .el-aside div{
         height: 100% !important;
     }
+  >>>.el-pagination.is-background .el-pager li:not(.disabled).active{
+    background-color: #ff6600!important;
+  }
+  >>>.el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active{
+
+    color: #ff6600!important;
+  }
+  >>>.el-tabs--border-card>.el-tabs__header .el-tabs__item:not(.is-disabled):hover{
+    color: #ff6600!important;
+  }
+  >>>.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #ff6600 !important;
+    border-color: #ff6600 !important;
+  }
+>>>.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  background-color: #ff6600 !important;
+  border-color: #ff6600 !important;
+}
 </style>
