@@ -12,6 +12,10 @@ import Demand from '@/components/demand/demand'
 import noApproval from '@/components/needApproval/noApproval'
 import yesApproval from '@/components/needApproval/yesApproval'
 import summary from "@/components/needSummary/summary";
+import physicalSupply from "../components/physicalSupply/physicalSupply";
+import procurementQuery from "../components/procurementQuery/procurementQuery";
+import noApprovals from "../components/procurementApproval/noApprovals";
+import yesApprovals from "../components/procurementApproval/yesApprovals";
 
 
 
@@ -69,8 +73,25 @@ export default new Router({
         },
         {
           path: '7',
-          name: '7',
+          name: '6',
           component: summary,
+        },{
+          path: '8-1',
+          name: '7',
+          component: physicalSupply,
+        },{
+          path: '8-2',
+          name: '7',
+          component: procurementQuery,
+        },
+        {
+          path: '9-1',
+          name: '8',
+          component: noApprovals,
+        },{
+          path: '9-2',
+          name: '7',
+          component: yesApprovals,
         }
       ]
 

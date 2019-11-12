@@ -64,12 +64,44 @@
                 </el-menu-item>
             </el-submenu>
           </el-submenu>
-          <el-menu-item-group>
             <el-menu-item index="/index/7" >
               <i class="el-icon-reading"></i>
               <span slot="title">物资需求报表</span>
             </el-menu-item>
-          </el-menu-item-group>
+          <el-submenu index="8">
+            <template slot="title">
+              <i class="el-icon-location"></i>
+              <span>采购计划</span>
+            </template>
+            <el-menu-item index="/index/8-1">
+              <i class="el-icon-s-order"></i>
+              <span slot="title">物资供应方案</span>
+            </el-menu-item>
+            <el-menu-item index="/index/8-2">
+              <i class="el-icon-s-order"></i>
+              <span slot="title">采购计划查改</span>
+            </el-menu-item>
+          </el-submenu>
+          <el-submenu index="/index/9">
+            <template slot="title">
+              <i class="el-icon-location"></i>
+              <span>采购计划审批</span>
+            </template>
+            <el-submenu index="/index/9-0">
+              <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>分类查看</span>
+              </template>
+              <el-menu-item index="/index/9-1">
+                <i class="el-icon-s-order"></i>
+                <span slot="title">待审批采购计划</span>
+              </el-menu-item>
+              <el-menu-item index="/index/9-2">
+                <i class="el-icon-s-order"></i>
+                <span slot="title">已审批采购计划</span>
+              </el-menu-item>
+            </el-submenu>
+          </el-submenu>
         </el-menu>
     </div>
 </template>
