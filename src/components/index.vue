@@ -1,7 +1,7 @@
 <template>
     <div class="box" style="position: relative">
         <el-container>
-            <el-aside width="200px" ><Aside></Aside></el-aside>
+            <el-aside width="205px" ><Aside></Aside></el-aside>
             <el-container>
                 <el-header height="80px" style="line-height: 80px">
                    <span style="height: 50px; line-height: 50px; color: #f6f8ff; font-size: 30px">物资管理系统</span>

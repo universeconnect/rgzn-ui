@@ -40,9 +40,9 @@
                     </el-menu-item>
                 </el-menu-item-group>
             </el-submenu>
-            <el-menu-item index="/index/4" >
-                <i class="el-icon-film"></i>
-                <span slot="title">需求计划查询</span>
+            <el-menu-item index="/index/4">
+              <i class="el-icon-film"></i>
+              <span slot="title">需求计划查询</span>
             </el-menu-item>
           <el-submenu index="/index/6">
             <template slot="title">
@@ -145,4 +145,10 @@
 </script>
 
 <style scoped>
+  .el-submenu{
+    text-align: left;
+  }
+  .el-menu-item{
+    text-align: left;
+  }
 </style>
