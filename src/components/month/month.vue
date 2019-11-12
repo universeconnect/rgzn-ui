@@ -85,16 +85,16 @@
                 label="物料分类名称"
                 width="150">
                 <template slot-scope="scope">
-                  <el-input size="mini" :disabled="true" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
-                  <span v-show="!scope.row.show">{{scope.row.name}}</span>
+                  <el-input size="mini" :disabled="true" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.bianma"></el-input>
+                  <span v-show="!scope.row.show">{{scope.row.bianma}}</span>
                 </template>
               </el-table-column>
               <el-table-column
                 label="物料编码"
                 width="150">
                 <template slot-scope="scope">
-                  <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
-                  <span v-show="!scope.row.show">{{scope.row.name}}</span>
+                  <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.ww"></el-input>
+                  <span v-show="!scope.row.show">{{scope.row.ww}}</span>
                 </template>
               </el-table-column>
               <el-table-column
@@ -255,12 +255,12 @@
 <script>
 
 export default {
-  name: 'HelloWorld',
+  name: 'month',
     data() {
         return {
             //表单假数据 begin
             formLabelAlign2:{
-                name:'王小虎',
+                name:'王小',
             },
             formLabelAlign: {
                 type: '月度计划',
@@ -314,7 +314,7 @@ export default {
         // getlistApi().then(res => {
         // let list = res.data.list
         let list = [
-            { ID:'1', name: '王小虎'},
+            { ID:'1', name: '123213',bianma:'111111',ww:"qsqssqsq"},
         ]
         list.forEach(element => {
             element["show"] = false
