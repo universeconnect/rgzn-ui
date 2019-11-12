@@ -11,6 +11,7 @@ import Query from '@/components/query/Query'
 import Demand from '@/components/demand/demand'
 import noApproval from '@/components/needApproval/noApproval'
 import yesApproval from '@/components/needApproval/yesApproval'
+import summary from "@/components/needSummary/summary";
 
 
 
@@ -65,6 +66,11 @@ export default new Router({
           path: '6-2',
           name: '5',
           component: yesApproval,
+        },
+        {
+          path: '7',
+          name: '7',
+          component: summary,
         }
       ]
 

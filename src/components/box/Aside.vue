@@ -5,7 +5,7 @@
         class="el-menu-vertical-demo"
         @open="handleOpen"
         @close="handleClose"
-        background-color="#545c64"
+        background-color="#333"
         text-color="#fff"
         active-text-color="#ffd04b"
         unique-opened
@@ -64,6 +64,12 @@
                 </el-menu-item>
             </el-submenu>
           </el-submenu>
+          <el-menu-item-group>
+            <el-menu-item index="/index/7" >
+              <i class="el-icon-reading"></i>
+              <span slot="title">物资需求报表</span>
+            </el-menu-item>
+          </el-menu-item-group>
         </el-menu>
     </div>
 </template>
