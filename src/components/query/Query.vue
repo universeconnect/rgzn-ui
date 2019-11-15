@@ -55,6 +55,67 @@
         <el-button class="bt-width" plain>取消</el-button>
       </div>
     </div>
+    <div class="table-he" style="margin-top: 20px">
+      <el-table
+        ref="multipleTable"
+        :data="tableData"
+        tooltip-effect="dark"
+        style="width: 100%;"
+        height="200px"
+        @selection-change="handleSelectionChange">
+        <el-table-column
+          type="index"
+          label="序号"
+          width="50">
+        </el-table-column>
+        <el-table-column
+          type="selection"
+          width="55">
+        </el-table-column>
+        <el-table-column
+          fixed
+          prop="ID"
+          label=""
+          width="50">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="需求计划编号">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="需求计划类型">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="审批状态">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="需求计划状态">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="需求部门">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="需求计划月份">
+        </el-table-column>
+        <!--<el-table-column
+          label="操作"
+          fixed="right"
+          width="150">
+          <el-button
+            size="mini"
+            @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+          <el-button
+            size="mini"
+            type="danger"
+            @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+        </el-table-column>-->
+      </el-table>
+    </div>
   </div>
 </template>
 

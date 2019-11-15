@@ -233,6 +233,7 @@
         name: "physicalSupply",
         data() {
             return {
+
                 multipleSelection: [],
                 //合并下拉选择
                 addTo: [{
