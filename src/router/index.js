@@ -24,12 +24,13 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
+      path: '/',
+      redirect:'/index'
+    },{
       path: '/login',
-      name: 'login',
       component: login
     },{
       path: '/index',
-      name: 'index',
       component: index,
       children:[//子路由
         {
@@ -38,59 +39,47 @@ export default new Router({
         },
         {
           path: '0',
-          name: '0',
           component: Demand,
         },
         {
           path: '1',
-          name: '1',
           component: Month,
         },
         {
           path: '2',
-          name: '2',
           component: Yearly,
         },
         {
           path: '3',
-          name: '3',
           component: Emergency,
         },
         {
           path: '4',
-          name: '4',
           component: Query,
         },
         {
           path: '6-1',
-          name: '5',
           component: noApproval,
         },
         {
           path: '6-2',
-          name: '5',
           component: yesApproval,
         },
         {
           path: '7',
-          name: '6',
           component: summary,
         },{
           path: '8-1',
-          name: '7',
           component: physicalSupply,
         },{
           path: '8-2',
-          name: '7',
           component: procurementQuery,
         },
         {
           path: '9-1',
-          name: '8',
           component: noApprovals,
         },{
           path: '9-2',
-          name: '7',
           component: yesApprovals,
         }
       ]

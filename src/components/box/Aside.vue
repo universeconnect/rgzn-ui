@@ -10,7 +10,8 @@
         active-text-color="#FF6600"
         unique-opened
         :router="r">
-            <el-submenu>
+
+            <el-submenu  index="/index/0">
                 <template slot="title">
                     <i class="el-icon-location"></i>
                     <span>需求计划</span>
@@ -40,6 +41,7 @@
                     </el-menu-item>
                 </el-menu-item-group>
             </el-submenu>
+
             <el-menu-item index="/index/4">
               <i class="el-icon-film"></i>
               <span slot="title">需求计划查询</span>

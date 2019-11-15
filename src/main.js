@@ -33,12 +33,9 @@ new Vue({
 
 
 
-// 设置路由转跳验证
+// 设置导航卫士
 router.beforeEach((to, from, next) => {
-  //to：目标路由对象
-  //from：目前路由对象
-  //next():继续转跳
-  //判断要去哪？
+  //要去哪？
   if(to.path === '/login'){
     //要去登录，通过
     next();

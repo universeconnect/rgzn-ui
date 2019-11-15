@@ -6,8 +6,7 @@
         :data="tableData"
         tooltip-effect="dark"
         style="width: 100%;"
-        height="300px"
-        @selection-change="handleSelectionChange">
+        height="300px">
         <el-table-column
           type="index"
           label="序号"

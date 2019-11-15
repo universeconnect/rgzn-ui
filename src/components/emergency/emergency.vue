@@ -22,10 +22,10 @@
             <el-form-item label="需求部门">
               <el-select v-model="value" style="width: 100% !important;" placeholder="请选择">
                 <el-option
-                  v-for="item in options"
-                  :key="item.value"
-                  :label="item.label"
-                  :value="item.value">
+                        v-for="item in options"
+                        :key="item.value"
+                        :label="item.label"
+                        :value="item.value">
                 </el-option>
               </el-select>
             </el-form-item>
@@ -61,127 +61,127 @@
           <el-tab-pane label="基本信息">
             <el-table :data="tabledatas" style="width: 100%" >
               <el-table-column
-                fixed
-                prop="ID"
-                label=""
-                width="50">
+                      fixed
+                      prop="ID"
+                      label=""
+                      width="50">
               </el-table-column>
               <el-table-column
-                label="物料分类编码"
-                width="150">
+                      label="物料分类编码"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="物料分类名称"
-                width="150">
+                      label="物料分类名称"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" :disabled="true" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="物料编码"
-                width="150">
+                      label="物料编码"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="物料名称"
-                width="150">
+                      label="物料名称"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" :disabled="true" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="规格"
-                width="150">
+                      label="规格"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="型号"
-                width="150">
+                      label="型号"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="单位"
-                width="150">
+                      label="单位"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="需求数量"
-                width="150">
+                      label="需求数量"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="需求月份"
-                width="150">
+                      label="需求月份"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" :disabled="true" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="需求日期"
-                width="150">
+                      label="需求日期"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="货额是否确定"
-                width="150">
+                      label="货额是否确定"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="期望供应商"
-                width="150">
+                      label="期望供应商"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="备注"
-                width="150">
+                      label="备注"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="物料追踪码"
-                width="150">
+                      label="物料追踪码"
+                      width="150">
                 <template slot-scope="scope">
                   <el-input size="mini" :disabled="true" placeholder="请输入内容" v-show="scope.row.show" v-model="scope.row.name"></el-input>
                   <span v-show="!scope.row.show">{{scope.row.name}}</span>
                 </template>
               </el-table-column>
               <el-table-column
-                label="操作"
-                fixed="right"
-                width="130">
+                      label="操作"
+                      fixed="right"
+                      width="130">
                 <template slot-scope="scope">
                   <el-button @click="scope.row.show =true">编辑</el-button>
                   <el-button @click="scope.row.show =false">保存</el-button>
@@ -192,28 +192,28 @@
 
           <el-tab-pane label="流程信息">
             <el-table
-              :data="tableData"
-              style="width: 100%">
+                    :data="tableData"
+                    style="width: 100%">
               <el-table-column
-                prop="ID"
-                label=""
-                width="50">
+                      prop="ID"
+                      label=""
+                      width="50">
               </el-table-column>
               <el-table-column
-                prop="name"
-                label="审批人">
+                      prop="name"
+                      label="审批人">
               </el-table-column>
               <el-table-column
-                prop="name"
-                label="审批时间">
+                      prop="name"
+                      label="审批时间">
               </el-table-column>
               <el-table-column
-                prop="name"
-                label="审批意见">
+                      prop="name"
+                      label="审批意见">
               </el-table-column>
               <el-table-column
-                prop="name"
-                label="说明">
+                      prop="name"
+                      label="说明">
               </el-table-column>
             </el-table>
           </el-tab-pane>
@@ -246,76 +246,78 @@
 
 <script>
 
-    export default {
-        name: 'emergency',
-        data() {
-            return {
-                //表单假数据 begin
-                formLabelAlign2:{
-                    name:'王小虎',
-                },
-                formLabelAlign: {
-                    type: '月度计划',
-                    id: '1111888',
-                    name: '',
-                    remark:'',
-                    staff:'',
-                    examine:'已审批',
-                    status:'已提交',
-                    budget:''
-                },
-                //end
-                value2:'',
-                //部门选择假数据
-                //begin
-                options: [{
-                    value: '选项1',
-                    label: '财务部'
-                }, {
-                    value: '选项2',
-                    label: '财务部'
-                }, {
-                    value: '选项3',
-                    label: '财务部'
-                }, {
-                    value: '选项4',
-                    label: '财务部'
-                }],
-                value: '',
-                //    end
-                tabledatas: [],
-            }
+  export default {
+    name: 'emergency',
+    data() {
+      return {
+        //表单假数据 begin
+        formLabelAlign2:{
+          name:'王小虎',
         },
-        methods: {
-            handleOpen(key, keyPath) {
-                console.log(key, keyPath);
-            },
-            handleClose(key, keyPath) {
-                console.log(key, keyPath);
-            },
-            handleEdit(index, row) {
-                console.log(index, row);
-            },
-            handleDelete(index, row) {
-                console.log(index, row);
-            },
+        formLabelAlign: {
+          type: '月度计划',
+          id: '1111888',
+          name: '',
+          remark:'',
+          staff:'',
+          examine:'已审批',
+          status:'已提交',
+          budget:''
+        },
+        //end
+        value2:'',
+        //部门选择假数据
+        //begin
+        options: [{
+          value: '选项1',
+          label: '财务部'
+        }, {
+          value: '选项2',
+          label: '财务部'
+        }, {
+          value: '选项3',
+          label: '财务部'
+        }, {
+          value: '选项4',
+          label: '财务部'
+        }],
+        value: '',
+        //    end
+        tabledatas: [],
+        tableData: [],
+        labelPosition: "",
+      }
+    },
+    methods: {
+      handleOpen(key, keyPath) {
+        console.log(key, keyPath);
+      },
+      handleClose(key, keyPath) {
+        console.log(key, keyPath);
+      },
+      handleEdit(index, row) {
+        console.log(index, row);
+      },
+      handleDelete(index, row) {
+        console.log(index, row);
+      },
 
-        },
-        created() {
-            // 发请求去后台拿数据,如果有api，就正常请求，
-            //我这里是demo，就简单给list赋值了，原理一样。
-            // getlistApi().then(res => {
-            // let list = res.data.list
-            let list = [
-                { ID:'1', name: '王小虎'},
-            ]
-            list.forEach(element => {
-                element["show"] = false
-            });
-            this.tabledatas = list
-            // })
-        }
+    },
+    created() {
+      // 发请求去后台拿数据,如果有api，就正常请求，
+      //我这里是demo，就简单给list赋值了，原理一样。
+      // getlistApi().then(res => {
+      // let list = res.data.list
+      let list = [
+        { ID:'1', name: '王小虎'},
+      ]
+      list.forEach(element => {
+        element["show"] = false
+      });
+      this.tabledatas = list
+      // })
     }
+  }
 </script>
 
 <style scoped>

@@ -67,7 +67,7 @@
 
 <script>
   export default {
-    name: "summary",
+    name: "Summary",
     data() {
       return {
         tableData: [{

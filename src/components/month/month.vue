@@ -228,7 +228,7 @@
 
           <el-tab-pane label="系统信息">
             <div style="margin: 20px;"></div>
-            <el-form :label-position="labelPosition" label-width="80px" :model="formLabelAlign2">
+            <el-form label-width="80px" :model="formLabelAlign2">
               <el-form-item label="编制人">
                 <el-input :disabled="true" v-model="formLabelAlign2.name"></el-input>
               </el-form-item>
@@ -292,6 +292,8 @@ export default {
             value: '',
         //    end
             tabledatas: [],
+            tableData: [],
+          labelPosition: "",
         }
     },
     methods: {

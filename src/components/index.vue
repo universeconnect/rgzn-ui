@@ -18,7 +18,6 @@
   export default {
     name: "index",
     components :{Aside}
-
   }
 </script>
 
